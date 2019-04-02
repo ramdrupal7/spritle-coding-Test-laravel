@@ -62,7 +62,7 @@
 	                            
 	                            <div class="col-md-8">
 	                            <?php // echo '<pre>'.print_r($comment->vote->count() , true).'</pre>'; ?>
-		                          	<a style="cursor: pointer;" comment_id_vote="{{ $comment->id }}" name_a="{{ Auth::user()->name }}"
+		                          	<a style="cursor: pointer; color :{{ $comment->vote->count() > 0 ? 'blue' : 'black'}}; " comment_id_vote="{{ $comment->id }}" name_a="{{ Auth::user()->name }}"
 		                                token="{{ csrf_token() }}" class="vote">
 		                                <i class="fa fa-heart"></i> <span id="comment_voting_count_{{ $comment->id }}">{{ $comment->vote->count() }}</span>
 		                               <!--  {{ $comment->vote->count() > 1 ? 'votes' : 'vote'}} -->
