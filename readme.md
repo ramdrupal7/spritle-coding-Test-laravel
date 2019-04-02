@@ -1,5 +1,6 @@
-1. composer update ( if load libraries)
-2.	php artisan key:generate ( if there is an error at key)
+1. Setup .env file from .env.example
+2. composer update ( if load libraries)
+3. php artisan key:generate ( if there is an error at key)
 
 # artisan to create a fake users
 	# open tinker at console
